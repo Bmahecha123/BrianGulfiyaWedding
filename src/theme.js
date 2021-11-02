@@ -47,7 +47,7 @@ const fontSizing = {
 };
 
 const containerSizing = {
-    small: "",
+    small: "15rem",
     medium: "25rem",
     large: "50rem"
 };
