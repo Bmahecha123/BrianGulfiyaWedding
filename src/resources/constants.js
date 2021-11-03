@@ -1,7 +1,5 @@
 const Collections = {
-    Invitees = "invitees"
+    Invitees: "invitees"
 };
 
-export default {
-    Collections
-};
+export default Collections;

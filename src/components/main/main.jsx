@@ -3,7 +3,7 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 import { colors } from '../../theme';
 import Home from '../home/home';
 import RSVP from '../rsvp/rsvp';
-import Contact from '../contact/contact';
+import Registry from '../registry/registry';
 
 const Main = () => (
     <main style={{backgroundColor: colors.mainBackgroundColor}}>
@@ -12,17 +12,16 @@ const Main = () => (
                 <Home />
             </Route>
             <Route path="/rsvp" render={(routeProps) => <RSVPSwitch {...routeProps} />} />
-            <Route path="/contact" render={() => <Contact />} />
+            <Route path="/registry" render={() => <Registry />} />
             <Redirect from="*" to="/" />
         </Switch>
     </main>
 );
 
-const RSVPSwitch = (props) => (
+const RSVPSwitch = () => (
     <section>
         <Switch>
             <Route exact path="/rsvp" render={() => <RSVP />} />
-            <Route path="/rsvp/:id" render={() => <Contact {...props} /> } />
         </Switch>
     </section>
 );

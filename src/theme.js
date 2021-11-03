@@ -18,6 +18,7 @@ const fontStyles = {
 const colors = {
     primaryTextColor: palette.black,
     green: palette.green,
+    red: palette.red,
     buttonTextColor: palette.azure,
     mainBackgroundColor: palette.azure,
     buttonBackgroundColor: palette.blue,

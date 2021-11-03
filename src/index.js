@@ -27,7 +27,9 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
 ReactDOM.render(
-  <React.StrictMode>
+  <
+// @ts-ignore
+  React.StrictMode>
     <BrowserRouter>
       <App />
     </BrowserRouter>

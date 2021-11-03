@@ -1,5 +1,5 @@
 import React from 'react';
-import { fontSizing, cardStyles, cardTitleStyles } from '../../theme';
+import { cardStyles } from '../../theme';
 
 const containerStyles = {
     display: 'flex',
