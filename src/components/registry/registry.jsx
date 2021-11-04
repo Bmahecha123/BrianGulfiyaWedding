@@ -19,7 +19,7 @@ const mapStyles = {
 const Registry = (props) => {
     return(
         <section style={sectionStyles}>
-            <iframe title="registry-page" src="https://registry.theknot.com/brian-mahecha-gulfiya-isyangulova-november-2020-fl/40826391" style={mapStyles}></iframe>
+            <iframe title="registry-page" src="https://www.zola.com/registry/brianandgulfiya" style={mapStyles}></iframe>
         </section>
     );
 };
