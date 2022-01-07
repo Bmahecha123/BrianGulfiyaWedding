@@ -84,11 +84,15 @@ const Home = () => {
 
             <article style={{...cardStyles(containerSizing.large), ...sectionStyles, marginBottom: spacing.large}}>
                 <h2 style={{fontSize: fontSizing.medium, padding: 0, margin: 0}}>Date</h2>
-                <p>December 18th, 2021</p>
+                <p>February 13th, 2022</p>
+                <h2 style={{fontSize: fontSizing.medium, padding: 0, margin: 0}}>Schedule</h2>
+                <p>Ceremony: 4pm</p>
+                <p>Cocktail hour: 4:30pm</p>
+                <p>Reception: 5:00pm-10:00pm</p>
                 <h2 style={{fontSize: fontSizing.medium, padding: 0, margin: 0}}>Venue</h2>
-                <p><a href="https://sweetwaterinn.com">Sweetwater Branch Inn</a></p>
+                <p><a href="https://https://cincofarm.com/">Cinco Farm</a></p>
                 <p>352-373-6760</p>
-                <iframe title="venue-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3467.3503298045753!2d-82.32071418492991!3d29.65160684397774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e8a3f3dc55c629%3A0xaf075d39a2a0b3bf!2sSweetwater%20Branch%20Inn%20Lodging%20and%20Events!5e0!3m2!1sen!2sus!4v1635824870207!5m2!1sen!2sus" style={mapStyles} ></iframe>
+                <iframe title="venue-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3599.6591206622993!2d-80.50031498510965!3d25.549729283733427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9e98f23234aff%3A0xd1110e27d8c81f7e!2sCinco%20Farm!5e0!3m2!1sen!2sus!4v1641345571289!5m2!1sen!2sus" style={mapStyles} ></iframe>
                 <h2 style={{fontSize: fontSizing.medium, padding: 0, margin: 0}}>Need to contact us?</h2>
                 <p>954-557-4349</p>
                 <p>mahechaisyangulovawedding@gmail.com</p>

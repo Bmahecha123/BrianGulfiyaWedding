@@ -29,8 +29,8 @@ const Header = () => {
             <nav>
                 <ul>
                     <li style={liStyles}><Link style={linkStyles} to="/">Home</Link></li>
-                    {/* <li style={liStyles}><Link style={linkStyles} to='/registry'>Registry</Link></li> */}
-                    <li style={liStyles}><a style={linkStyles} rel="noreferrer" target="_blank" href="https://www.zola.com/registry/brianandgulfiya">Registry</a></li>
+                    <li style={liStyles}><Link style={linkStyles} to='/registry'>Registry</Link></li>
+                    {/* <li style={liStyles}><a style={linkStyles} rel="noreferrer" target="_blank" href="https://www.zola.com/registry/brianandgulfiya">Registry</a></li> */}
                     <li style={liStyles}><Link style={linkStyles} to='/rsvp'>RSVP</Link></li>
                 </ul>
             </nav>

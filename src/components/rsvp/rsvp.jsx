@@ -89,6 +89,17 @@ const RSVP = () => {
 
     const [successfullyPostedDoc, setSuccessfullyPostedDoc] = useState(false);
 
+    const resetForm = () => {                             setInvitationCode(null);
+        setInvitee(inviteeType);
+        setChildList([]);
+        setHasPlusOne(false);
+        setMealPreference('');
+        setPlusOneName('');
+        setPlusOneMealPreference('');
+        setChildName('');
+        setShowInviteeForm(false);
+        setSuccessfullyPostedDoc(false);
+    };
     return(
         <section style={{...sectionStyles, padding: spacing.medium}}>
             {showInviteeForm
@@ -273,6 +284,7 @@ const RSVP = () => {
 
                         const updatedInvitee = {
                             fullName: invitee.fullName,
+                            hasRsvped: true,
                             mealPreference: mealPreference,
                             plusOne: {
                                 fullName: plusOneName,
@@ -292,26 +304,15 @@ const RSVP = () => {
                         }
                     }}
                 >Submit Info</button>
+                <button
+                    id="startFormOverBtn"
+                    style={{alignSelf: 'center', ...inputStyles, ...inputButtonStyles, fontSize: fontSizing.small, width: containerSizing.small}} 
+                    type="button"
+                    onClick={() => resetForm()}
+                >Want to start over? Click here!</button>
                 {successfullyPostedDoc && <>
                     <h1 style={{fontSize: fontSizing.medium, color: colors.red}}>{"Successfully submitted, see you there *<)8D!"}</h1>
-                    <button
-                        id="startFormOverBtn"
-                        style={{alignSelf: 'center', ...inputStyles, ...inputButtonStyles, fontSize: fontSizing.small, width: containerSizing.small}} 
-                        type="button"
-                        onClick={() => {
-                            setInvitationCode(null);
-                            setInvitee(inviteeType);
-                            setChildList([]);
-                            setHasPlusOne(false);
-                            setMealPreference('');
-                            setPlusOneName('');
-                            setPlusOneMealPreference('');
-                            setChildName('');
-                            setShowInviteeForm(false);
-                            setSuccessfullyPostedDoc(false);
 
-                        }}
-                    >Want to start over? Click here!</button>
                 </>}
             </form>  
             : <form style={formStyles}>
