@@ -56,10 +56,10 @@ const AutoplaySlider = withAutoplay(AwesomeSlider);
 const Home = () => {
     return(
         <section style={sectionStyles}>
-            <h1 style={headerStyles}>Gulfiya and Brian's Wedding!</h1>
+            <h1 style={{...headerStyles, textAlign: 'center', margin: spacing.small}}>Gulfiya and Brian's Wedding!</h1>
 
             <AutoplaySlider
-                style={{...cardStyles(containerSizing.large)}}
+                style={{...cardStyles(containerSizing.large), margin: spacing.small}}
                 // screens={[
 
                 // ]}
@@ -73,7 +73,7 @@ const Home = () => {
                 <div style={divStyles}><img alt="carousel pic 4" style={imgStyles} src={carouselPic4} /></div>
             </AutoplaySlider>
 
-            <article style={{...sectionStylesHorizontal, marginTop: spacing.large, marginBottom: spacing.large, flexWrap: 'wrap',}}>
+            <article style={{...sectionStylesHorizontal, marginTop: spacing.large, margin: spacing.small, flexWrap: 'wrap',}}>
                 <Video 
                     style={{...cardStyles(containerSizing.large), objectFit: 'cover', maxWidth: containerSizing.large, maxHeight: containerSizing.large }} 
                     name="CompliationVid2" 
@@ -82,13 +82,16 @@ const Home = () => {
                     maxHeight={containerSizing.large} />
             </article>
 
-            <article style={{...cardStyles(containerSizing.large), ...sectionStyles, marginBottom: spacing.large}}>
-                <h2 style={{fontSize: fontSizing.medium, padding: 0, margin: 0}}>Date</h2>
-                <p>February 13th, 2022</p>
-                <h2 style={{fontSize: fontSizing.medium, padding: 0, margin: 0}}>Schedule</h2>
-                <p>Ceremony: 4pm</p>
-                <p>Cocktail hour: 4:30pm</p>
-                <p>Reception: 5:00pm-10:00pm</p>
+            <article style={{...cardStyles(containerSizing.large), ...sectionStyles, margin: spacing.small, padding: spacing.small}}>
+                <h2 style={{fontSize: fontSizing.large, padding: 0, margin: 0}}>Date</h2>
+                <p style={{fontSize: fontSizing.medium}}>February 13th, 2022</p>
+                <h2 style={{fontSize: fontSizing.large, padding: 0, margin: 0}}>Schedule</h2>
+                <p style={{fontSize: fontSizing.medium}}>Ceremony: 4pm</p>
+                <p style={{fontSize: fontSizing.medium}}>Cocktail hour: 4:30pm</p>
+                <p style={{fontSize: fontSizing.medium}}>Reception: 5:00pm-10:00pm</p>
+            </article>
+
+            <article style={{...cardStyles(containerSizing.large), ...sectionStyles, margin: spacing.small}}>
                 <h2 style={{fontSize: fontSizing.medium, padding: 0, margin: 0}}>Venue</h2>
                 <p><a href="https://https://cincofarm.com/">Cinco Farm</a></p>
                 <p>352-373-6760</p>

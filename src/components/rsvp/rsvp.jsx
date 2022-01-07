@@ -323,7 +323,7 @@ const RSVP = () => {
                     name="invitationCode" 
                     placeholder="Enter Invitation Code"
                     onChange={e => {
-                        setInvitationCode(e.target.value);
+                        setInvitationCode(e.target.value.toLowerCase());
                     }} 
                     value={invitationCode} 
                 />
