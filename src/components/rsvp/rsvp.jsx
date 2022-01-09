@@ -255,7 +255,7 @@ const RSVP = () => {
                     style={{...inputStyles, marginLeft: 0}} 
                     type="text"
                     name="childName"
-                    placeholder="Enter their name"
+                    placeholder="Enter their name and age, e.g. Jim, 10"
                     value={childName}
                     onChange={e => {
                         setChildName(e.target.value);
@@ -276,7 +276,7 @@ const RSVP = () => {
 
                 <button
                     id="submitInfoBtn"
-                    style={{...inputStyles, ...inputButtonStyles, boxShadow: colors.buttonBoxShadow, alignSelf: 'center', marginTop: spacing.medium, fontWeight: fontStyles.bold}} 
+                    style={{...inputStyles, ...inputButtonStyles, borderStyle: 'solid', alignSelf: 'center', marginTop: spacing.medium, fontWeight: fontStyles.bold}} 
                     type="button"
                     onClick={async () => {
                         // print everything
@@ -318,7 +318,7 @@ const RSVP = () => {
             : <form style={formStyles}>
                 <input 
                     id="invitationCode" 
-                    style={{...inputStyles, boxShadow: colors.buttonBoxShadow,}} 
+                    style={{...inputStyles, borderStyle: 'solid'}} 
                     type="text" 
                     name="invitationCode" 
                     placeholder="Enter Invitation Code"

@@ -1,13 +1,13 @@
 const palette = {
-    white: "#F1ECCE",
+    white: "#F8F9FA",
     azure: "#F2FDFF",
-    black: "#070d18",
+    black: "#212529",
     blue: "#355dae",
     red: "#7c2529",
     olive: "#ae4a35",
     bronze: "#ae4a35",
     brown: "#ae8635",
-    green: "rgb(53,174,134)"
+    green: "rgb(33, 37, 41)"
 };
 
 const fontStyles = {
@@ -19,15 +19,15 @@ const colors = {
     primaryTextColor: palette.black,
     green: palette.green,
     red: palette.red,
-    buttonTextColor: palette.azure,
-    mainBackgroundColor: palette.azure,
-    buttonBackgroundColor: palette.blue,
-    inputBackgroundColor: palette.azure,
-    headerBackgroundColor: palette.blue,
+    buttonTextColor: palette.black,
+    mainBackgroundColor: palette.white,
+    buttonBackgroundColor: palette.white,
+    inputBackgroundColor: palette.white,
+    headerBackgroundColor: palette.white,
     footerBackgroundColor: palette.brown,
-    cardBackgroundColor: palette.azure,
-    buttonBoxShadow: "0 2px 14px 4px rgba(53, 64, 134, 0.60)",
-    cardBoxShadow: "0 2px 14px 4px rgba(53,174,134, 0.60)"
+    cardBackgroundColor: palette.white,
+    buttonBoxShadow: "0 2px 14px 4px rgb(33, 37, 41)",
+    cardBoxShadow: "0 2px 14px 4px rgb(33, 37, 41)"
 };
 
 const spacing = {
@@ -56,7 +56,7 @@ const containerSizing = {
 const cardStyles = (maxWidth) => {
     return {
         maxWidth: maxWidth,
-        boxShadow: colors.cardBoxShadow,
+        //boxShadow: colors.cardBoxShadow,
         margin: 0,
         borderRadius: 7,
         backgroundColor: colors.cardBackgroundColor,
