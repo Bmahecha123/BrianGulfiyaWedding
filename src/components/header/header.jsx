@@ -28,8 +28,8 @@ const linkStyles = {
 };
 
 const imgStyles = {
-    maxWidth: fontSizing.large,
-    maxHeight: fontSizing.large,
+    maxWidth: fontSizing.xlarge,
+    maxHeight: fontSizing.xlarge,
     objectFit: 'cover',
     
 };
