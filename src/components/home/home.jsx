@@ -85,6 +85,7 @@ const Home = () => {
             <article style={{...cardStyles(containerSizing.large), ...sectionStyles, margin: spacing.small, padding: spacing.small}}>
                 <h2 style={{fontSize: fontSizing.large, padding: 0, margin: 0}}>Date</h2>
                 <p style={{fontSize: fontSizing.medium}}>February 13th, 2022</p>
+                <h2 style={{fontSize: fontSizing.large, padding: 0, margin: 0}}>Attire: Semi-Formal</h2>
                 <h2 style={{fontSize: fontSizing.large, padding: 0, margin: 0}}>Schedule</h2>
                 <p style={{fontSize: fontSizing.medium}}>Ceremony: 4pm</p>
                 <p style={{fontSize: fontSizing.medium}}>Cocktail hour: 4:30pm</p>
