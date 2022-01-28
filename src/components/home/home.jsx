@@ -6,6 +6,8 @@ import withAutoplay from 'react-awesome-slider/dist/autoplay';
 import 'react-awesome-slider/dist/styles.css';
 
 //Pictures
+import newCarouselPic1 from '../../assets/engagePic.JPG';
+import newCarouselPic2 from '../../assets/engagePic2.JPG';
 import carouselPic1 from '../../assets/briangulfiyaistanbul.JPG';
 import carouselPic2 from '../../assets/centralpark.JPG';
 import carouselPic3 from '../../assets/engagement.JPG';
@@ -67,6 +69,8 @@ const Home = () => {
                 cancelOnInteraction={false} // should stop playing on user interaction
                 interval={6000}
             >
+                <div style={divStyles}><img alt="carousel pic new 1" style={imgStyles} src={newCarouselPic1} /></div>
+                <div style={divStyles}><img alt="carousel pic new 2" style={imgStyles} src={newCarouselPic2} /></div>
                 <div style={divStyles}><img alt="carousel pic 1" style={imgStyles} src={carouselPic1} /></div>
                 <div style={divStyles}><img alt="carousel pic 2" style={imgStyles} src={carouselPic2} /></div>
                 <div style={divStyles}><img alt="carousel pic 3" style={imgStyles} src={carouselPic3} /></div>
@@ -95,7 +99,7 @@ const Home = () => {
             <article style={{...cardStyles(containerSizing.large), ...sectionStyles, margin: spacing.small}}>
                 <h2 style={{fontSize: fontSizing.large, padding: 0, margin: 0}}>Venue</h2>
                 <p style={{fontSize: fontSizing.medium}}><a href="https://https://cincofarm.com/">Cinco Farm</a></p>
-                <p style={{fontSize: fontSizing.medium}}>352-373-6760</p>
+                <p style={{fontSize: fontSizing.medium}}>786-410-5041</p>
                 <iframe title="venue-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3599.6591206622993!2d-80.50031498510965!3d25.549729283733427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9e98f23234aff%3A0xd1110e27d8c81f7e!2sCinco%20Farm!5e0!3m2!1sen!2sus!4v1641345571289!5m2!1sen!2sus" style={mapStyles} ></iframe>
                 <h2 style={{fontSize: fontSizing.large, padding: 0, margin: 0}}>Need to contact us?</h2>
                 <p style={{fontSize: fontSizing.medium}}>954-557-4349</p>
